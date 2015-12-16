@@ -30,7 +30,9 @@
    [rect 350 150 65 233 "blue"]
    [rect 200 420 70 70 "yellow"]
 
-])
+   (map vline (:vlines @app-state))
+   (map hline (:hlines @app-state))]
+)
 
 (defn hello-world []
   [:div [:h1 "Mondriaan"]
